@@ -35,7 +35,7 @@ public class BonusService {
       bonus = limit;
     }
     return bonus;
-  }
+  }  
 }
 
 Шаг 4. Создайте тестовый класс со следующим исходным кодом:
@@ -58,7 +58,7 @@ public class BonusServiceTest {
 
     // производим проверку (сравниваем ожидаемый и фактический):
     Assertions.assertEquals(expected, actual);
-  }
+  }  
 
   @Test
   void shouldCalculateForRegisteredAndOverLimit() {
@@ -74,8 +74,8 @@ public class BonusServiceTest {
 
     // производим проверку (сравниваем ожидаемый и фактический):
     Assertions.assertEquals(expected, actual);
-  }
-}
+  }  
+}  
 
 Шаг 5. Запустите тесты через mvn clean test, убедитесь, что они запускаются и проходят.
 
