@@ -26,17 +26,17 @@
 
 Шаг 3. Создайте сервисный класс со следующим исходным кодом:
 
-public class BonusService {
-  public long calculate(long amount, boolean registered) {
-    int percent = registered ? 3 : 1;
-    long bonus = amount * percent / 100;
-    long limit = 500;
-    if (bonus > limit) {
-      bonus = limit;
-    }
-    return bonus;
-  }  
-}
+public class BonusService {  
+  public long calculate(long amount, boolean registered) {  
+    int percent = registered ? 3 : 1;  
+    long bonus = amount * percent / 100;  
+    long limit = 500;  
+    if (bonus > limit) {  
+      bonus = limit;  
+    }  
+    return bonus;  
+  }    
+}  
 
 Шаг 4. Создайте тестовый класс со следующим исходным кодом:
 import org.junit.jupiter.api.Test;
@@ -83,7 +83,7 @@ public class BonusServiceTest {
 
 Шаг 7. Убедитесь, что тесты запускаются и проходят.
 
-Итого: отправьте на проверку ссылку на репозиторий GitHub с вашим проектом
+<b>Итого: отправьте на проверку ссылку на репозиторий GitHub с вашим проектом</b>
 
 ## Решение
 
